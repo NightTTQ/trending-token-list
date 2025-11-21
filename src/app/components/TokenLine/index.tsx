@@ -26,7 +26,7 @@ const TokenLine: FC<Props> = (props) => {
     const firstChar = baseName ? baseName.charAt(0) : "";
 
     return (
-      <div className="flex items-center gap-2 ml-4 border-r border-[var(--color-border)]">
+      <div className="flex items-center gap-2 pl-4 pr-4 border-r border-[var(--color-border)]">
         <div className="w-[30px] h-[30px] rounded-[4px] flex items-center justify-center flex-shrink-0">
           {tokenInfo.baseLogo ? (
             <img
@@ -59,7 +59,7 @@ const TokenLine: FC<Props> = (props) => {
                   );
                 }
               }}
-              className="flex items-center justify-center cursor-pointer hover:opacity-80 transition-opacity"
+              className="flex items-center justify-center cursor-pointer hover:opacity-80 transition-opacity flex-shrink-0"
             >
               <img src="/search-icon.svg" className="w-[11px] h-[11px]" />
             </button>
