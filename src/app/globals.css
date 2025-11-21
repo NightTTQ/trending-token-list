@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* 使用 Tailwind v4 的 @theme 指令定义颜色主题 */
+@theme {
+  --color-primary-text: rgba(255, 255, 255, 1);
+  --color-secondary-text: rgba(255, 255, 255, 0.4);
+  --color-primary-pink: rgba(238, 171, 189, 1);
+  /* --color-row-hovered: rgba(244, 188, 204, 1); */
+  --color-row-hovered: rgba(238, 171, 189, 0.15);
+  --color-upside: rgba(70, 193, 127, 1);
+  --color-downside: rgba(229, 56, 56, 1);
+  --color-background: rgba(0, 0, 0, 1);
+  --color-border: rgba(60, 43, 47, 1);
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-primary-text);
+  font-family: Arial, Helvetica, sans-serif;
+}
